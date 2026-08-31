@@ -5,36 +5,30 @@ const isLovableSandbox =
   !!process.env["DEV_SERVER__PROJECT_PATH"];
 
 export default defineConfig({
-  nitro: isLovableSandbox
-    ? undefined
-    : {
-        preset: "node-server",
-      },
+  // No Lovable usa a configuração normal.
+  // No GitHub Pages desativa o Nitro, pois não existe servidor.
+  nitro: isLovableSandbox ? undefined : false,
 
   vite: {
     base: isLovableSandbox ? "/" : "/site2/",
   },
 
-  tanstackStart: {
-    server: {
-      entry: "server",
-    },
+  tanstackStart: isLovableSandbox
+    ? {
+        server: {
+          entry: "server",
+        },
+      }
+    : {
+        prerender: {
+          enabled: true,
+          crawlLinks: true,
+        },
 
-    ...(isLovableSandbox
-      ? {}
-      : {
-          prerender: {
-            enabled: true,
-            autoSubfolderIndex: true,
-            autoStaticPathsDiscovery: true,
-            crawlLinks: true,
+        pages: [
+          {
+            path: "/",
           },
-
-          pages: [
-            {
-              path: "/",
-            },
-          ],
-        }),
-  },
+        ],
+      },
 });
