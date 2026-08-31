@@ -12,7 +12,7 @@ export const CLINIC = {
   address: "R. Srg. Orlando Randi, 32A - Fábricas", // [EDITAR]
   phone: "(32) 98819-0907", // [EDITAR]
   whatsappLabel: "(32) 8819-0907", // [EDITAR]
-  email: "[EDITAR] contato@clinicarobertobotelho.com.br", // [EDITAR]
+  email: "contato@clinicarobertobotelho.com.br", // [EDITAR]
   hours: [
     { day: "Segunda a sexta", time: "08h — 19h" },
     { day: "Sábado", time: "08h — 12h" },
@@ -129,6 +129,6 @@ export const JOURNEY = [
 
 export const TESTIMONIALS = [
   { name: "Nome do paciente", text: "Espaço reservado para um depoimento." },
-  { name: "Nome do paciente", text: "[EDITAR] Espaço reservado para um depoimento." },
-  { name: "Nome do paciente", text: "[EDITAR] Espaço reservado para um depoimento." },
+  { name: "Nome do paciente", text: "Espaço reservado para um depoimento." },
+  { name: "Nome do paciente", text: "Espaço reservado para um depoimento." },
 ];
