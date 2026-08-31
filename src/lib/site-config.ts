@@ -11,7 +11,7 @@ export const CLINIC = {
   tagline: "Odontologia Integrada",
   address: "R. Srg. Orlando Randi, 32A - Fábricas", // [EDITAR]
   phone: "(32) 98819-0907", // [EDITAR]
-  whatsappLabel: "(32) 8819-0907", // [EDITAR]
+  whatsappLabel: "(32) 98819-0907", // [EDITAR]
   email: "contato@clinicarobertobotelho.com.br", // [EDITAR]
   hours: [
     { day: "Segunda a sexta", time: "08h — 19h" },
