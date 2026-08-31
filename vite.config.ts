@@ -5,12 +5,10 @@ const isLovableSandbox =
   !!process.env["DEV_SERVER__PROJECT_PATH"];
 
 export default defineConfig({
-  // No Lovable usa a configuração normal.
-  // No GitHub Pages desativa o Nitro, pois não existe servidor.
   nitro: isLovableSandbox ? undefined : false,
 
   vite: {
-    base: isLovableSandbox ? "/" : "/clinica.robertobotelho/",
+    base: isLovableSandbox ? "/" : "./",
   },
 
   tanstackStart: isLovableSandbox
