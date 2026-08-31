@@ -1,6 +1,6 @@
 import { ArrowDown, CalendarDays } from "lucide-react";
 import { openWhatsApp } from "@/lib/site-config";
-import equipe from "@/assets/equipe.png.asset.json";
+import equipe from "@/assets/equipe.png";
 
 export function Hero() {
   return (
@@ -54,7 +54,7 @@ export function Hero() {
           <div className="absolute -left-6 -top-6 hidden h-40 w-40 rounded-3xl border border-brand-sand/40 sm:block" />
           <div className="relative overflow-hidden rounded-[2rem] bg-secondary shadow-lift">
             <img
-              src={equipe.url}
+              src={equipe}
               alt="Dentistas da Clínica Roberto Botelho na recepção da clínica"
               className="h-full w-full object-cover transition-transform duration-[1.4s] ease-out hover:scale-[1.03]"
               width={637}
