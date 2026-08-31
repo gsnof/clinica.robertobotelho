@@ -10,7 +10,7 @@ export default defineConfig({
   nitro: isLovableSandbox ? undefined : false,
 
   vite: {
-    base: isLovableSandbox ? "/" : "/site2/",
+    base: isLovableSandbox ? "/" : "/clinica.robertobotelho/",
   },
 
   tanstackStart: isLovableSandbox
