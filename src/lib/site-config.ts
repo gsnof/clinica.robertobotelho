@@ -4,25 +4,25 @@
  */
 
 /** Número de WhatsApp da clínica no formato internacional, somente dígitos. */
-export const WHATSAPP_NUMBER = "55XXXXXXXXXXX"; // [EDITAR]
+export const WHATSAPP_NUMBER = "553288190907"; // [EDITAR]
 
 export const CLINIC = {
   name: "Clínica Roberto Botelho",
   tagline: "Odontologia Integrada",
-  address: "[EDITAR] Rua, número — Bairro, Cidade/UF", // [EDITAR]
-  phone: "[EDITAR] (00) 0000-0000", // [EDITAR]
-  whatsappLabel: "[EDITAR] (00) 00000-0000", // [EDITAR]
+  address: "R. Srg. Orlando Randi, 32A - Fábricas", // [EDITAR]
+  phone: "(32) 98819-0907", // [EDITAR]
+  whatsappLabel: "(32) 8819-0907", // [EDITAR]
   email: "[EDITAR] contato@clinicarobertobotelho.com.br", // [EDITAR]
   hours: [
-    { day: "Segunda a sexta", time: "[EDITAR] 08h — 19h" },
-    { day: "Sábado", time: "[EDITAR] 08h — 12h" },
+    { day: "Segunda a sexta", time: "08h — 19h" },
+    { day: "Sábado", time: "08h — 12h" },
     { day: "Domingo e feriados", time: "Fechado" },
   ],
   /** Endereço usado no mapa. Troque pelo endereço real da clínica. */
   mapQuery: "Clínica Roberto Botelho Odontologia Integrada", // [EDITAR]
   social: {
-    instagram: "https://instagram.com/", // [EDITAR]
-    facebook: "https://facebook.com/", // [EDITAR]
+    instagram: "https://www.instagram.com/clinicarobertobotelho/", // [EDITAR]
+    facebook: "https://www.facebook.com/drrobertobotelho/", // [EDITAR]
   },
 };
 
@@ -97,15 +97,15 @@ export const SPECIALTIES = [
 
 export const TEAM = [
   {
-    name: "[EDITAR] Nome do profissional",
-    role: "[EDITAR] Cargo / especialidade",
-    bio: "[EDITAR] Breve apresentação do profissional.",
+    name: "Nome do profissional",
+    role: "Cargo / especialidade",
+    bio: "Breve apresentação do profissional.",
     photo: "equipe",
   },
   {
-    name: "[EDITAR] Nome da profissional",
-    role: "[EDITAR] Cargo / especialidade",
-    bio: "[EDITAR] Breve apresentação da profissional.",
+    name: "Nome da profissional",
+    role: "Cargo / especialidade",
+    bio: "Breve apresentação da profissional.",
     photo: "recepcao",
   },
 ] as const;
@@ -128,7 +128,7 @@ export const JOURNEY = [
 ];
 
 export const TESTIMONIALS = [
-  { name: "[EDITAR] Nome do paciente", text: "[EDITAR] Espaço reservado para um depoimento real de paciente." },
-  { name: "[EDITAR] Nome do paciente", text: "[EDITAR] Espaço reservado para um depoimento real de paciente." },
-  { name: "[EDITAR] Nome do paciente", text: "[EDITAR] Espaço reservado para um depoimento real de paciente." },
+  { name: "Nome do paciente", text: "Espaço reservado para um depoimento." },
+  { name: "Nome do paciente", text: "[EDITAR] Espaço reservado para um depoimento." },
+  { name: "Nome do paciente", text: "[EDITAR] Espaço reservado para um depoimento." },
 ];
