@@ -1,5 +1,5 @@
 import { HeartHandshake, Cpu, Award, Sparkles } from "lucide-react";
-import recepcao from "@/assets/equipe-recepcao.png.asset.json";
+import recepcao from "@/assets/equipe-recepcao.png";
 
 const HIGHLIGHTS = [
   { icon: HeartHandshake, label: "Atendimento personalizado" },
