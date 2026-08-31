@@ -5,26 +5,36 @@ const isLovableSandbox =
   !!process.env["DEV_SERVER__PROJECT_PATH"];
 
 export default defineConfig({
-  nitro: isLovableSandbox ? undefined : false,
+  nitro: isLovableSandbox
+    ? undefined
+    : {
+        preset: "node-server",
+      },
 
   vite: {
     base: isLovableSandbox ? "/" : "/site2/",
   },
 
-  tanstackStart: isLovableSandbox
-    ? {
-        server: { entry: "server" },
-      }
-    : {
-        prerender: {
-          enabled: true,
-          crawlLinks: true,
-        },
+  tanstackStart: {
+    server: {
+      entry: "server",
+    },
 
-        pages: [
-          {
-            path: "/",
+    ...(isLovableSandbox
+      ? {}
+      : {
+          prerender: {
+            enabled: true,
+            autoSubfolderIndex: true,
+            autoStaticPathsDiscovery: true,
+            crawlLinks: true,
           },
-        ],
-      },
+
+          pages: [
+            {
+              path: "/",
+            },
+          ],
+        }),
+  },
 });
