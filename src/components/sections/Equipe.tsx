@@ -1,14 +1,14 @@
 import { TEAM } from "@/lib/site-config";
-import equipe from "@/assets/equipe.png.asset.json";
-import recepcao from "@/assets/equipe-recepcao.png.asset.json";
+import equipe from "@/assets/equipe.png";
+import recepcao from "@/assets/equipe-recepcao.png";
 
 const PHOTOS: Record<string, { url: string; alt: string }> = {
   equipe: {
-    url: equipe.url,
+    url: equipe,
     alt: "Profissional da Clínica Roberto Botelho",
   },
   recepcao: {
-    url: recepcao.url,
+    url: recepcao,
     alt: "Profissionais da Clínica Roberto Botelho na recepção",
   },
 };
