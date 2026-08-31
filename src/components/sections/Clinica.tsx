@@ -15,7 +15,7 @@ export function Clinica() {
         <div className="reveal order-2 lg:order-1">
           <div className="overflow-hidden rounded-[2rem] shadow-soft">
             <img
-              src={recepcao.url}
+              src={recepcao}
               alt="Ambiente da recepção da Clínica Roberto Botelho com a marca na parede"
               className="h-full w-full object-cover"
               loading="lazy"
